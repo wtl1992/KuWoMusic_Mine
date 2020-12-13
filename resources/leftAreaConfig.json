@@ -1,0 +1,75 @@
+[{
+	"tagName": "\u63a8\u8350",
+	"color": "rgba(255,210,0,255)",
+	"width": 200,
+	"height": 40,
+	"textSize": 16
+}, {
+	"tagName": "\u89c6\u9891",
+	"color": "rgba(255,210,0,255)",
+	"width": 200,
+	"height": 40,
+	"textSize": 16
+}, {
+	"tagName": "\u6211\u7684\u97f3\u4e50",
+	"color": "rgba(255,210,0,255)",
+	"width": 200,
+	"height": 30,
+	"textSize": 16
+}, {
+	"tagName": "\u4e0b\u8f7d\u7ba1\u7406",
+	"color": "rgba(255,210,0,255)",
+	"width": 200,
+	"height": 40,
+	"textSize": 16
+}, {
+	"tagName": "\u672c\u5730\u97f3\u4e50",
+	"color": "rgba(255,210,0,255)",
+	"width": 200,
+	"height": 40,
+	"textSize": 16
+}, {
+	"tagName": "\u6700\u8fd1\u64ad\u653e",
+	"color": "rgba(255,210,0,255)",
+	"width": 200,
+	"height": 40,
+	"textSize": 16
+}]
+} {
+	"leftAreaTagConfigJson": [{
+		"tagName": "\u63a8\u8350",
+		"color": "rgba(255,210,0,255)",
+		"width": 200,
+		"height": 40,
+		"textSize": 16
+	}, {
+		"tagName": "\u89c6\u9891",
+		"color": "rgba(255,210,0,255)",
+		"width": 200,
+		"height": 40,
+		"textSize": 16
+	}, {
+		"tagName": "\u6211\u7684\u97f3\u4e50",
+		"color": "rgba(255,210,0,255)",
+		"width": 200,
+		"height": 30,
+		"textSize": 16
+	}, {
+		"tagName": "\u4e0b\u8f7d\u7ba1\u7406",
+		"color": "rgba(255,210,0,255)",
+		"width": 200,
+		"height": 40,
+		"textSize": 16
+	}, {
+		"tagName": "\u672c\u5730\u97f3\u4e50",
+		"color": "rgba(255,210,0,255)",
+		"width": 200,
+		"height": 40,
+		"textSize": 16
+	}, {
+		"tagName": "\u6700\u8fd1\u64ad\u653e",
+		"color": "rgba(255,210,0,255)",
+		"width": 200,
+		"height": 40,
+		"textSize": 16
+	}]

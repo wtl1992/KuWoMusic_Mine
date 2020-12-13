@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>resources/images/window/kuwo.png</file>
+        <file>resources/images/close.png</file>
+        <file>resources/images/comment.png</file>
+        <file>resources/images/download.png</file>
+        <file>resources/images/FM.png</file>
+        <file>resources/images/index.png</file>
+        <file>resources/images/line.png</file>
+        <file>resources/images/listen.png</file>
+        <file>resources/images/listenMusic.png</file>
+        <file>resources/images/loopPlay.png</file>
+        <file>resources/images/lyric.png</file>
+        <file>resources/images/max.png</file>
+        <file>resources/images/message.png</file>
+        <file>resources/images/min.png</file>
+        <file>resources/images/music.png</file>
+        <file>resources/images/play.png</file>
+        <file>resources/images/playList.png</file>
+        <file>resources/images/refresh.png</file>
+        <file>resources/images/search.png</file>
+        <file>resources/images/setting.png</file>
+        <file>resources/images/skin.png</file>
+        <file>resources/images/volumn.png</file>
+        <file>resources/images/sliderPngs/scroll1.jpg</file>
+        <file>resources/images/sliderPngs/scroll2.jpg</file>
+        <file>resources/images/sliderPngs/scroll3.jpg</file>
+        <file>resources/images/sliderPngs/scroll4.jpg</file>
+        <file>resources/images/recommendPage/change.png</file>
+        <file>resources/images/recommendPage/dayRecommend.png</file>
+        <file>resources/images/recommendPage/hotComment.png</file>
+        <file>resources/images/recommendPage/hotMusic0.png</file>
+        <file>resources/images/recommendPage/hotMusic1.png</file>
+        <file>resources/images/recommendPage/hotMusic2.png</file>
+        <file>resources/images/recommendPage/hotMusic3.png</file>
+        <file>resources/images/recommendPage/hotMusic4.png</file>
+        <file>resources/images/recommendPage/hotMusic5.png</file>
+        <file>resources/images/recommendPage/hotMusic6.png</file>
+        <file>resources/images/recommendPage/hotMusic7.png</file>
+        <file>resources/images/recommendPage/more.png</file>
+        <file>resources/images/recommendPage/sentimental.jpg</file>
+        <file>resources/images/recommendPage/singleMusic.jpg</file>
+    </qresource>
+</RCC>
