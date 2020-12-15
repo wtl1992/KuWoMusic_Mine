@@ -1,28 +1,28 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>LeftAreaRectTags.qml</file>
+        <file>LeftAreaDelegate.qml</file>
+        <file>HotSearchHeader.qml</file>
+        <file>RecommendPage.qml</file>
+        <file>RadiusImage.qml</file>
+        <file>TopNTemplate.qml</file>
+    </qresource>
+    <qresource prefix="/images">
         <file>resources/images/window/kuwo.png</file>
-        <file>resources/images/close.png</file>
-        <file>resources/images/comment.png</file>
-        <file>resources/images/download.png</file>
-        <file>resources/images/FM.png</file>
         <file>resources/images/index.png</file>
-        <file>resources/images/line.png</file>
-        <file>resources/images/listen.png</file>
-        <file>resources/images/listenMusic.png</file>
-        <file>resources/images/loopPlay.png</file>
-        <file>resources/images/lyric.png</file>
-        <file>resources/images/max.png</file>
-        <file>resources/images/message.png</file>
-        <file>resources/images/min.png</file>
-        <file>resources/images/music.png</file>
-        <file>resources/images/play.png</file>
-        <file>resources/images/playList.png</file>
         <file>resources/images/refresh.png</file>
         <file>resources/images/search.png</file>
-        <file>resources/images/setting.png</file>
+        <file>resources/images/listening.png</file>
+        <file>resources/images/music.png</file>
+        <file>resources/images/message.png</file>
         <file>resources/images/skin.png</file>
-        <file>resources/images/volumn.png</file>
+        <file>resources/images/FM.png</file>
+        <file>resources/images/setting.png</file>
+        <file>resources/images/line.png</file>
+        <file>resources/images/min.png</file>
+        <file>resources/images/max.png</file>
+        <file>resources/images/close.png</file>
         <file>resources/images/sliderPngs/scroll1.jpg</file>
         <file>resources/images/sliderPngs/scroll2.jpg</file>
         <file>resources/images/sliderPngs/scroll3.jpg</file>
@@ -41,5 +41,13 @@
         <file>resources/images/recommendPage/more.png</file>
         <file>resources/images/recommendPage/sentimental.jpg</file>
         <file>resources/images/recommendPage/singleMusic.jpg</file>
+        <file>resources/images/recommendPage/song1.png</file>
+        <file>resources/images/recommendPage/song2.png</file>
+        <file>resources/images/recommendPage/song3.png</file>
+        <file>resources/images/recommendPage/song4.png</file>
+        <file>resources/images/recommendPage/song5.png</file>
+    </qresource>
+    <qresource prefix="/js">
+        <file>resources/javascript/Ajax.js</file>
     </qresource>
 </RCC>

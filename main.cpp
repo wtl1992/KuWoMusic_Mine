@@ -1,4 +1,5 @@
 #include "jsonreader.h"
+#include "dategetutil.h"
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
@@ -16,6 +17,9 @@ int main(int argc, char *argv[])
 
     context->setContextProperty("jsonReader",new JsonReader());
     context->setContextProperty("app",&app);
+    //获取系统时间
+    context->setContextProperty("dateTimeUtil",new DateGetUtil());
+
 
     qRegisterMetaType<QList<QString> *>("QList<QString> *");
 
@@ -29,7 +33,7 @@ int main(int argc, char *argv[])
 
 
     //设置窗口图标
-    app.setWindowIcon(QIcon(":/resources/images/window/kuwo.png"));
+    app.setWindowIcon(QIcon(":/images/resources/images/window/kuwo.png"));
     //获取rootObjects
     QObject * objects = engine.rootObjects().first();
     QWindow * qmlWindow = qobject_cast<QWindow *>(objects);//获取qml在的源窗口
