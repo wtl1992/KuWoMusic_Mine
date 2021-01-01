@@ -2,7 +2,6 @@
 #define DATEGETUTIL_H
 
 #include <QObject>
-#include <QString>
 #include <QDateTime>
 
 class DateGetUtil : public QObject
@@ -13,6 +12,7 @@ public:
 
     Q_INVOKABLE QString getDateTimeStr();
 
+    Q_INVOKABLE QString parseTimeStamp(qint64 timestamp);
 };
 
 #endif // DATEGETUTIL_H

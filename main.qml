@@ -1,16 +1,23 @@
 import QtQuick 2.14
 import QtQuick.Window 2.14
 import QtQuick.Controls 2.14
+import "qrc:/js/resources/javascript/Ajax.js" as Ajax
+import "qrc:/js/resources/javascript/Timer.js" as Timer
+import "qrc:/js/resources/javascript/Utils.js" as Utils
 
-ApplicationWindow {
+Window {
     id: window
     visible: true
     objectName: "window"
     width: 1224
     height: 764
     title: qsTr("酷我音乐")
+    flags: Qt.FramelessWindowHint | Qt.WindowSystemMenuHint
+           | Qt.WindowMinimizeButtonHint| Qt.Window
 
-    property var currentPage: RecommendPage{}
+    property var loaders: [recommendPageCenterAreaLoader,moviePageCenterAreaLoader
+            ,tagPlayListPageCenterAreaLoader,topNPageCenterAreaLoader,topNRealPageLoader
+            ,musicDetailPageLoader,[],downloadPageCenterAreaLoader]
 
     ListModel{
         id: sliderPngsModel
@@ -21,18 +28,17 @@ ApplicationWindow {
     }
 
     //最底层响应拖拽窗体
-    //        Loader{
-    //            id: fullAreaLoader
-    //            source: "FullAreaDeep.qml"
-    //        }
+    Loader{
+        id: fullAreaLoader
+        source: "FullAreaDeep.qml"
+    }
 
     Rectangle{
         id: fullRect
         width: window.width - 6
         height: window.height - 6
-        x: 3
-        y: 3
 
+        color: "transparent"
 
         //左侧区域
         Loader{
@@ -42,10 +48,55 @@ ApplicationWindow {
 
         //centerArea
         Loader{
-            id: centerAreaLoader
+            id: recommendPageCenterAreaLoader
             x: 220
             y: 80
-            sourceComponent: currentPage
+            source:  "RecommendPage.qml"
+            onLoaded: {
+                console.log(recommendPageCenterAreaLoader.item.sortText)
+            }
+        }
+
+        Loader{
+            id: moviePageCenterAreaLoader
+            x: 220
+            y: 80
+            source: "MoviePage.qml"
+        }
+
+        Loader{
+            id: tagPlayListPageCenterAreaLoader
+            x: 220
+            y: 80
+            source: "TagPlayListPage.qml"
+        }
+
+        Loader{
+            id: downloadPageCenterAreaLoader
+            x: 220
+            y: 80
+            source: "DownloadPage.qml"
+        }
+
+        Loader{
+            id: topNPageCenterAreaLoader
+            x: 220
+            y: 80
+            source: "TopNPage.qml"
+        }
+
+        Loader{
+            id: topNRealPageLoader
+            x: 220
+            y: 80
+            source: "TopNRealPage.qml"
+        }
+
+        Loader{
+            id: musicDetailPageLoader
+            x: 220
+            y: 80
+            source: "MusicDetailPage.qml"
         }
 
         Loader{
@@ -54,10 +105,11 @@ ApplicationWindow {
         }
 
         //bottomArea
-        //        Loader{
-        //            id: bottomPlayControlLoader
-        //            sourceComponent: BottonPlayControl{}
-        //        }
+        Loader{
+            id: bottomPlayControlLoader
+            source: "BottonPlayerArea.qml"
+            anchors.top: leftAreaRectTagsLoader.bottom
+        }
     }
 
 
@@ -70,18 +122,22 @@ ApplicationWindow {
         }
 
         //加载leftArea的tag标签数据
-        let leftAreaConfigJsonList = jsonReader.getLeftAreaConfigJson();
-        console.log(leftAreaConfigJsonList)
-        let leftAreaConfigJson = JSON.parse(leftAreaConfigJsonList);
+        let leftAreaConfigJson = jsonReader.getLeftAreaConfigJson();
 
         for (let i=0;i<leftAreaConfigJson.length;i++){
             leftAreaTag.append(leftAreaConfigJson[i]);
             leftAreaConfigJson[i]["index"] = i;
         }
 
-
-        console.log(leftAreaTag.count)
-
+        let node = bottomPlayControlLoader.item;
+        let topNRealPageNode = topNRealPageLoader.item;
+        Timer.setInterval(function(){
+            if (topNRealPageNode.startFlag){
+                node.progressTimeTotalTextStr = Timer.timeToMinute(mediaPlayer.duration);
+                node.progressTimeSpanTextStr = Timer.timeToMinute(mediaPlayer.position);
+                node.progressingBarRectWidth = (mediaPlayer.position / mediaPlayer.duration) * node.playLengthRectWidth;
+            }
+        },500);
     }
 }
 

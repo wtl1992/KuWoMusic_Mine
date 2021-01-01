@@ -6,7 +6,18 @@
         <file>HotSearchHeader.qml</file>
         <file>RecommendPage.qml</file>
         <file>RadiusImage.qml</file>
+        <file>MoviePage.qml</file>
+        <file>TagPlayListPage.qml</file>
+        <file>DownloadPage.qml</file>
+        <file>SmallRect.qml</file>
+        <file>TopNPage.qml</file>
         <file>TopNTemplate.qml</file>
+        <file>TopNTemplateView.qml</file>
+        <file>TopNRealPage.qml</file>
+        <file>BottonPlayerArea.qml</file>
+        <file>FullAreaDeep.qml</file>
+        <file>SkinWindow.qml</file>
+        <file>MusicDetailPage.qml</file>
     </qresource>
     <qresource prefix="/images">
         <file>resources/images/window/kuwo.png</file>
@@ -41,13 +52,29 @@
         <file>resources/images/recommendPage/more.png</file>
         <file>resources/images/recommendPage/sentimental.jpg</file>
         <file>resources/images/recommendPage/singleMusic.jpg</file>
-        <file>resources/images/recommendPage/song1.png</file>
-        <file>resources/images/recommendPage/song2.png</file>
-        <file>resources/images/recommendPage/song3.png</file>
-        <file>resources/images/recommendPage/song4.png</file>
-        <file>resources/images/recommendPage/song5.png</file>
+        <file>resources/images/moviePage/play.png</file>
+        <file>resources/images/moviePage/loading.gif</file>
+        <file>resources/images/downloadPage/dir.png</file>
+        <file>resources/images/downloadPage/play.png</file>
+        <file>resources/images/downloadPage/batch.png</file>
+        <file>resources/images/downloadPage/export.png</file>
+        <file>resources/images/downloadPage/refresh.png</file>
+        <file>resources/images/topN/play.png</file>
+        <file>resources/images/topN/playing.png</file>
+        <file>resources/images/bottomPlayArea/next.png</file>
+        <file>resources/images/bottomPlayArea/play.png</file>
+        <file>resources/images/bottomPlayArea/playing.png</file>
+        <file>resources/images/bottomPlayArea/previous.png</file>
+        <file>resources/images/bottomPlayArea/template.jpg</file>
+        <file>resources/images/bottomPlayArea/volumn.png</file>
+        <file>resources/images/bottomPlayArea/like.png</file>
+        <file>resources/images/bottomPlayArea/liked.png</file>
+        <file>resources/images/bottomPlayArea/download.png</file>
+        <file>resources/images/background.jpg</file>
     </qresource>
     <qresource prefix="/js">
         <file>resources/javascript/Ajax.js</file>
+        <file>resources/javascript/Timer.js</file>
+        <file>resources/javascript/Utils.js</file>
     </qresource>
 </RCC>

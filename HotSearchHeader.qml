@@ -7,14 +7,19 @@ Rectangle{
     width: window.width - leftAreaRectTagsLoader.width - 6
     height: 80
     x: leftAreaRectTagsLoader.width
-    y: -10
-    color: "#FFFFFF"
+    y: 2
+    color: "transparent"
 
     property string minToolTip: qsTr("最小化")
     property string maxToolTip: qsTr("最大化")
     property string closeToolTip: qsTr("关闭")
+    property string skinToolTip: qsTr("皮肤盒子")
 
     property bool maxWindowFlag: false
+
+    SkinWindow{
+        id: skinWindow
+    }
 
     Image{
         id: refreshImage
@@ -70,7 +75,7 @@ Rectangle{
         height: parent.height
         x: parent.width - 390
 
-        color: "#FFFFFF"
+        color: "transparent"
 
         Image{
             id: musicImage
@@ -100,6 +105,24 @@ Rectangle{
             width: 23
             x: 112
             y: (parent.height - skinImage.height) / 2
+
+            MouseArea{
+                anchors.fill: parent
+
+                hoverEnabled: true
+                ToolTip.text: skinToolTip
+                onEntered: {
+                    ToolTip.visible = true;
+                }
+
+                onExited: {
+                    ToolTip.visible = false;
+                }
+
+                onClicked: {
+                    skinWindow.show();
+                }
+            }
         }
 
         Image{

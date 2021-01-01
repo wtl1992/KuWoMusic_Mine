@@ -10,6 +10,8 @@
 #include <QDebug>
 #include <QGuiApplication>
 #include <QFile>
+#include <QJsonArray>
+#include <QJsonDocument>
 
 class JsonReader : public QObject
 {
@@ -33,7 +35,7 @@ public:
 
     Q_INVOKABLE int getListSize(QList<QString> *);
 
-    Q_INVOKABLE QString getLeftAreaConfigJson();
+    Q_INVOKABLE QJsonArray getLeftAreaConfigJson();
 
 };
 

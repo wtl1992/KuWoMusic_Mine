@@ -42,20 +42,12 @@ int JsonReader::getListSize(QList<QString> * list){
     return list->size();
 }
 
-QString JsonReader::getLeftAreaConfigJson(){
+QJsonArray JsonReader::getLeftAreaConfigJson(){
     QFile file(QCoreApplication::applicationDirPath() + "/" + LEFT_TEXTAREA_PATH);
-    if (file.open(QIODevice::ReadOnly | QIODevice::Text) == false){
+    if (file.open(QIODevice::ReadOnly) == false){
         qDebug() << "打开文件失败:" + LEFT_TEXTAREA_PATH;
         exit(-1);
     }
 
-    QTextStream in(&file);
-    QString stringBuilder = "";
-    QString line = in.readLine();
-    while (!line.isNull()) {
-        stringBuilder.append(line);
-        line = in.readLine();
-    }
-
-    return stringBuilder;
+    return QJsonDocument::fromJson(file.readAll()).array();
 }

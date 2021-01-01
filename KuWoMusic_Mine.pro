@@ -1,4 +1,4 @@
-QT += quick
+QT += quick multimedia widgets network
 
 CONFIG += c++11
 
@@ -14,7 +14,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        dategetutil.cpp \
+        BackgroundImageReader.cpp \
+        DateGetUtil.cpp \
+        DownloadMusicRun.cpp \
+        JSonUtil.cpp \
+        MediaPlayer.cpp \
+        NewWindiowSetting.cpp \
+        RecommendPageUtil.cpp \
+        UUIDUtil.cpp \
         jsonreader.cpp \
         main.cpp
 
@@ -32,7 +39,14 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    dategetutil.h \
+    BackgroundImageReader.h \
+    DateGetUtil.h \
+    DownloadMusicRun.h \
+    JSonUtil.h \
+    MediaPlayer.h \
+    NewWindiowSetting.h \
+    RecommendPageUtil.h \
+    UUIDUtil.h \
     jsonreader.h
 
 DISTFILES +=

@@ -25,7 +25,7 @@ Item {
         visible: false
         anchors.fill: parent
         source: imageSource
-        sourceSize: Qt.size(parent.size, parent.size)
+        sourceSize: Qt.size(imageWidth,imageHeight)
         antialiasing: true
     }
     Rectangle {

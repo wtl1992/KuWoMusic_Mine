@@ -42,7 +42,7 @@ Rectangle{
 
                 Image{
                     id: listImage
-                    source: pic
+                    source: al.picUrl
                     sourceSize: Qt.size(parent.height, parent.height)
                     visible: false
                     fillMode: Image.PreserveAspectFit
@@ -72,24 +72,11 @@ Rectangle{
                 id: listText
                 width: listView.width - listItem.width
                 height: 20
-                text: name
+                text: al.name
                 anchors.left: listItem.right
                 y: 10
                 font.pixelSize: 18
                 font.family: "微软雅黑"
-                anchors.leftMargin: 5
-            }
-
-            Text{
-                id: list2Text
-                width: listView.width - listItem.width
-                height: 20
-                text: artist
-                anchors.left: listItem.right
-                y: 40
-                font.pixelSize: 18
-                font.family: "微软雅黑"
-                color: "#CCCCCC"
                 anchors.leftMargin: 5
             }
 

@@ -1,37 +1,64 @@
 [{
-	"tagName": "\u63a8\u8350",
-	"itemColor": "#FFFFD200",
-	"itemWidth": 200,
-	"itemHeight": 40,
-	"textSize": 16
-}, {
-	"tagName": "\u89c6\u9891",
-	"itemColor": "#FFFFD200",
-	"itemWidth": 200,
-	"itemHeight": 40,
-	"textSize": 16
-}, {
-	"tagName": "\u6211\u7684\u97f3\u4e50",
-	"itemColor": "#FFFFD200",
-	"itemWidth": 200,
-	"itemHeight": 30,
-	"textSize": 16
-}, {
-	"tagName": "\u4e0b\u8f7d\u7ba1\u7406",
-	"itemColor": "#FFFFD200",
-	"itemWidth": 200,
-	"itemHeight": 40,
-	"textSize": 16
-}, {
-	"tagName": "\u672c\u5730\u97f3\u4e50",
-	"itemColor": "#FFFFD200",
-	"itemWidth": 200,
-	"itemHeight": 40,
-	"textSize": 16
-}, {
-	"tagName": "\u6700\u8fd1\u64ad\u653e",
-	"itemColor": "#FFFFD200",
-	"itemWidth": 200,
-	"itemHeight": 40,
-	"textSize": 16
-}]
+		"tagName": "推荐",
+		"itemColor": "#FFFFD200",
+		"itemWidth": 200,
+		"itemHeight": 40,
+		"textSize": 16
+	}, {
+		"tagName": "视频",
+		"itemColor": "#FFFFD200",
+		"itemWidth": 200,
+		"itemHeight": 40,
+		"textSize": 16
+	},
+	{
+		"tagName": "歌单",
+		"itemColor": "#FFFFD200",
+		"itemWidth": 200,
+		"itemHeight": 30,
+		"textSize": 16
+	}, {
+		"tagName": "排行榜",
+		"itemColor": "#FFFFD200",
+		"itemWidth": 200,
+		"itemHeight": 40,
+		"textSize": 16
+	}, {
+		"tagName": "排行榜详情",
+		"itemColor": "#FFFFD200",
+		"itemWidth": 200,
+		"itemHeight": 40,
+		"textSize": 16
+	},
+{
+		"tagName": "歌单详情",
+		"itemColor": "#FFFFD200",
+		"itemWidth": 200,
+		"itemHeight": 40,
+		"textSize": 16
+	},	{
+		"tagName": "我的音乐",
+		"itemColor": "#FFFFD200",
+		"itemWidth": 200,
+		"itemHeight": 30,
+		"textSize": 16
+	}, {
+		"tagName": "下载管理",
+		"itemColor": "#FFFFD200",
+		"itemWidth": 200,
+		"itemHeight": 40,
+		"textSize": 16
+	}, {
+		"tagName": "本地音乐",
+		"itemColor": "#FFFFD200",
+		"itemWidth": 200,
+		"itemHeight": 40,
+		"textSize": 16
+	}, {
+		"tagName": "最近播放",
+		"itemColor": "#FFFFD200",
+		"itemWidth": 200,
+		"itemHeight": 40,
+		"textSize": 16
+	}
+]
